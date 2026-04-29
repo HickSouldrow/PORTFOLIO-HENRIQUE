@@ -1,0 +1,10 @@
+{
+
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/_next/:path*", "destination": "/_next/:path*" },
+    { "source": "/static/:path*", "destination": "/static/:path*" },
+
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
