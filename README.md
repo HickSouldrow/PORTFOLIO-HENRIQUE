@@ -1,6 +1,4 @@
-# GUARDSENSE-WEB 
-
-**GuardSense-web** is a promotional website of Guardsense's app and monitoring systems.
+# HEY, THATS MY PORTFOLIO!
 
 Built with **React**, **Vite**, and **TailwindCSS**.
 
@@ -9,17 +7,18 @@ Built with **React**, **Vite**, and **TailwindCSS**.
 - React
 - Vite
 - React Router DOM
-- SweetAlert2
+- Lucide React
+- React Intersection Observer
 - TailwindCSS
 
-##  How to Run the Project (on the Visual Studio Code)
+##  How to Run the Project by download (on the Visual Studio Code):
 
 ```bash
 # Clone the repository
 git clone https://github.com/HickSouldrow/GUARDSENSE-WEB.git
 
 # Enter the server folder
-cd GUARDSENSE-WEB
+cd 
 
 # Install the main libraries
 npm install react react-dom react-router-dom lucide-react react-intersection-observer

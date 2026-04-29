@@ -1,63 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
-
-:root {
-  --color-gs-blue-light: #0097B2;
-  --color-gs-blue-dark: #00404C;
-  --color-gs-button: #0097B2;
-  --color-gs-darker-blue: #002C36;
-  --color-gs-ocean: #005F73;
-}
-
-
 @layer utilities {
-
-  /* BACKGROUNDS */
-  .bg-guardsense-blue-light {
-    background-color: var(--color-gs-blue-light);
-  }
-  .bg-guardsense-blue-dark {
-    background-color: var(--color-gs-blue-dark);
-  }
-  .bg-guardsense-button {
-    background-color: var(--color-gs-button);
-  }
-  .bg-guardsense-darker-blue {
-    background-color: var(--color-gs-darker-blue);
-  }
-  .bg-guardsense-ocean {
-    background-color: var(--color-gs-ocean);
-  }
-
-  .text-guardsense-button {
-    color: var(--color-gs-button);
-  }
-  .text-guardsense-darker-blue {
-    color: var(--color-gs-darker-blue);
-  }
-  /* GRADIENTES */
-
-   .gs-gradient-mix {
-    background: linear-gradient( 135deg,var(--color-gs-ocean) 5%,var(--color-gs-blue-dark) 70%,var(--color-gs-darker-blue) 90%);
-  }
-  
-  .gs-gradient-light {
-    background: linear-gradient(135deg, var(--color-gs-blue-light), var(--color-gs-ocean));
-  }
-  .gs-gradient-dark {
-    background: linear-gradient(135deg, var(--color-gs-darker-blue), var(--color-gs-blue-dark));
-  }
-
-  /* CARDS */
-  .gs-card {
-    @apply rounded-2xl shadow-xl p-6 backdrop-blur-md border border-white/10;
-    background-color: rgba(0, 44, 54, 0.40); /* guardsense-darker-blue + 40% */
-  }
-
-  .gs-card-light {
-    @apply rounded-xl shadow-lg p-4 backdrop-blur-sm border border-white/10;
-    background-color: rgba(0, 64, 76, 0.20); /* guardsense-blue-dark + 20% */
-  }
 
   /* SECTIONS */
   .gs-section {

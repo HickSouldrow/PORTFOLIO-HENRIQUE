@@ -1,6 +1,6 @@
 import { ProjectCard, TechCard } from "../../components";
 import { Github, Linkedin, BookOpen, Terminal } from "lucide-react";
-import { useFadeOnView } from "../../hooks/useFadeOnView"; // Importe aqui!
+import { useFadeOnView } from "../../hooks/useFadeOnView";
 
 const Inicial = () => {
   const heroAnim = useFadeOnView(0.1);
@@ -24,9 +24,9 @@ const Inicial = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-stone-800 shadow-2xl">
               <img
-                src="https://github.com/HickSouldrow.png"
+                src="public/HickSouldrow.jpeg"
                 alt="Henrique Macedo"
-                className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover transition-all duration-500"
               />
             </div>
           </div>
@@ -36,12 +36,13 @@ const Inicial = () => {
               Fullstack Developer
             </span>
             <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none mb-6">
-              Henrique <span className="text-stone-600">Macedo</span>
+              Henrique <span className="text-lime-500">Macedo</span>
             </h1>
             <p className="max-w-xl text-stone-400 text-lg md:text-xl leading-relaxed mb-8">
               Transformando lógica em interfaces intuitivas. Técnico pela ETEC,
               especializado em{" "}
-              <span className="text-white font-medium">React</span> e{" "}
+              <span className="text-white font-medium">React</span>, {" "}
+              <span className="text-white font-medium">MySQL</span> e {" "}
               <span className="text-white font-medium">Ecossistema .NET</span>.
             </p>
 
@@ -86,7 +87,7 @@ const Inicial = () => {
               title="GlitchScreen"
               description="Loja virtual de jogos Indie desenvolvida durante o HackTeen. Sistema de roteamento complexo e consumo de API por JSON."
               tags={["React Router", "Axios", "Vite", "Node.js"]}
-              link="https://github.com/HickSouldrow" // Troque pelo link real do repo
+              link="https://github.com/HickSouldrow/Glitchscreen" 
               delay="200ms"
             />
           </div>
@@ -101,15 +102,15 @@ const Inicial = () => {
             <div className="grid gap-4">
               <TechCard
                 title="Frontend"
-                items={["React", "Javascript", "Tailwind", "Kotlin (Compose)"]}
+                items={["React", "Javascript", "Tailwind", "Kotlin (Compose)", "TailWindCss", "C++"]}
               />
               <TechCard
                 title="Backend"
-                items={[".NET", "Node.js", "C#", "PHP", "Firebase"]}
+                items={[".NET", "Node.js", "C#", "PHP", "Firebase", "Kotlin"]}
               />
               <TechCard
                 title="Tools"
-                items={["Git/GitHub", "Figma", "Docker Basics", "SQL"]}
+                items={["Git/GitHub", "Figma", "Docker Basics", "SQL", "Astah", "Visual Studio Code", "Intellij", "Android Studio"]}
               />
             </div>
           </div>
@@ -121,12 +122,22 @@ const Inicial = () => {
             <div className="space-y-8">
               <div className="relative pl-6 border-l-2 border-stone-800">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
+                <h4 className="text-white font-bold">FATEC Zona Leste</h4>
+                <p className="text-green-400 text-sm font-mono uppercase">
+                  Técnico em Análise e Desenv. de Sistemas
+                </p>
+                <p className="text-stone-500 text-sm mt-2 italic">
+                  Articulação Médio - Superior
+                </p>
+              </div>
+                <div className="relative pl-6 border-l-2 border-stone-800">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-stone-700"></div>
                 <h4 className="text-white font-bold">ETEC Zona Leste</h4>
                 <p className="text-green-400 text-sm font-mono uppercase">
                   Técnico em Desenv. de Sistemas
                 </p>
                 <p className="text-stone-500 text-sm mt-2 italic">
-                  Trabalho Relevante: HackTeen - GlitchScreen
+                  Trabalho Relevante: HackTeen - GlitchScreen; TCC - GuardSense
                 </p>
               </div>
               <div className="relative pl-6 border-l-2 border-stone-800">
@@ -161,7 +172,7 @@ const Inicial = () => {
             </div>
             <div className="text-right">
               <p className="text-stone-600 text-sm italic">
-                "Code is like humor. When you have to explain it, it’s bad."
+                "I hope you liked it, go check my projects on Github :)."
               </p>
               <p className="text-stone-500 text-xs mt-4">
                 © 2026 — São Paulo, BR
