@@ -20,46 +20,12 @@
     @apply text-lg md:text-xl text-gray-200;
   }
 
-  /* IMAGENS */
-  .gs-img {
-    @apply rounded-2xl shadow-xl;
-  }
 
   .fade-up {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.6s ease-out forwards;
   }
-
-  /* Fade da esquerda */
-  .fade-left {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: fadeLeft 0.6s ease-out forwards;
-  }
-
-  /* Extras */
-  .animate-fade-in-left {
-    animation: fadeLeft 0.6s ease-out forwards;
-  }
-
-  .animate-fade-in-up {
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  /* Delays */
-  .animation-delay-100 { animation-delay: 0.1s; }
-  .animation-delay-200 { animation-delay: 0.2s; }
-  .animation-delay-300 { animation-delay: 0.3s; }
-  .animation-delay-400 { animation-delay: 0.4s; }
-  .animation-delay-500 { animation-delay: 0.5s; }
-  .animation-delay-600 { animation-delay: 0.6s; }
-  .animation-delay-700 { animation-delay: 0.7s; }
-  .animation-delay-800 { animation-delay: 0.8s; }
-  .animation-delay-900 { animation-delay: 0.9s; }
-  .animation-delay-1000 { animation-delay: 1.0s; }
-  .animation-delay-1200 { animation-delay: 1.2s; }
-}
 
 @keyframes fadeUp {
   from {
@@ -100,16 +66,6 @@
   );
   filter: blur(100px);
   animation: moverDiagonais 12s ease-in-out infinite;
-}
 
-@keyframes moverDiagonais {
-  0% {
-    transform: translate(-20%, -10%);
-  }
-  50% {
-    transform: translate(20%, 10%);
-  }
-  100% {
-    transform: translate(-20%, -10%);
-  }
+}
 }
