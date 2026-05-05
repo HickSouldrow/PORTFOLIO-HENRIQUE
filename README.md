@@ -15,10 +15,10 @@ Built with **React**, **Vite**, and **TailwindCSS**.
 
 ```bash
 # Clone the repository
-git clone https://github.com/HickSouldrow/GUARDSENSE-WEB.git
+git clone https://github.com/HickSouldrow/PORTFOLIO-HENRIQUE.git
 
 # Enter the server folder
-cd 
+cd PORTFOLIO-HENRIQUE
 
 # Install the main libraries
 npm install react react-dom react-router-dom lucide-react react-intersection-observer
@@ -28,5 +28,4 @@ npm install tailwindcss @tailwindcss/vite
 
 # Run the development project
 npm run dev
-
 

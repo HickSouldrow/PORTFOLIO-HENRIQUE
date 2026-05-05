@@ -24,7 +24,7 @@ const Inicial = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-stone-800 shadow-2xl">
               <img
-                src="public/HickSouldrow.jpeg"
+                src="src/assets/HickSouldrow.jpeg"
                 alt="Henrique Macedo"
                 className="w-full h-full object-cover transition-all duration-500"
               />
