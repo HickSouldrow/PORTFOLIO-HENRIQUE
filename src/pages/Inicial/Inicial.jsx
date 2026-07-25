@@ -2,6 +2,10 @@ import { ProjectCard, TechCard } from "../../components";
 import { Github, Linkedin, BookOpen, Terminal } from "lucide-react";
 import { useFadeOnView } from "../../hooks/useFadeOnView";
 
+import guardsenseImg from "../../assets/Guardsense.svg";
+import glitchScreenImg from "../../assets/GlitchScreen.jpg";
+import perfilImg from "../../assets/Perfil.jpeg";
+
 const Inicial = () => {
   const heroAnim = useFadeOnView(0.1);
 
@@ -24,7 +28,7 @@ const Inicial = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-stone-800 shadow-2xl">
               <img
-                src="src/assets/HickSouldrow.jpeg"
+                src={perfilImg}
                 alt="Henrique Macedo"
                 className="w-full h-full object-cover transition-all duration-500"
               />
@@ -82,7 +86,7 @@ const Inicial = () => {
               description="Plataforma promocional para monitoramento inteligente. Foco em UX/UI minimalista, performance com Vite e total responsividade."
               tags={["React", "Node.js", "Tailwind CSS", "SPA"]}
               link="https://guardsense-web.vercel.app"
-              image="/src/assets/Guardsense.svg"
+              image={guardsenseImg}
               imageBg="bg-white"
             />
 
@@ -91,7 +95,7 @@ const Inicial = () => {
               description="Loja virtual de jogos Indie desenvolvida durante o HackTeen. Sistema de roteamento complexo e consumo de API por JSON."
               tags={["React Router", "Axios", "Vite", "Node.js"]}
               link="https://github.com/HickSouldrow/Glitchscreen"
-              image="/src/assets/GlitchScreen.jpg"
+              image={glitchScreenImg}
               delay="200ms"
               imageBg="bg-white"
               imageContain={true}
