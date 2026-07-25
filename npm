@@ -1,8 +1,0 @@
-Start-Process : Esse comando n∆o pode ser executado devido ao erro: O sistema n∆o pode encontrar o arquivo 
-especificado.
-No linha:1 caractere:1
-+ Start-Process -Filepath 'C:\Users\corey\OneDrive\Documents\workspace\ ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
-    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
- 

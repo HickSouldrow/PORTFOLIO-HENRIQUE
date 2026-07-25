@@ -1,8 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ExternalLink, Code2 } from "lucide-react";
-import { useFadeOnView } from "../../hooks/useFadeOnView"; // Importe aqui!
 
-const ProjectCard = ({ title, description, tags, link, delay = "0ms" }) => {
+const ProjectCard = ({
+  title,
+  description,
+  tags,
+  link,
+  image,
+  imageBg = "bg-stone-900",
+  imageContain = false,
+  delay = "0ms",
+}) => {
   const ref = useRef(null);
   const [visivel, setVisivel] = useState(false);
 
@@ -26,6 +34,7 @@ const ProjectCard = ({ title, description, tags, link, delay = "0ms" }) => {
       }`}
     >
       <div className="p-8 md:p-10 flex flex-col lg:flex-row gap-8 items-center">
+        {/* Conteúdo de Texto */}
         <div className="flex-1 text-left">
           <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
             {title}
@@ -52,12 +61,23 @@ const ProjectCard = ({ title, description, tags, link, delay = "0ms" }) => {
             Ver Detalhes <ExternalLink size={16} />
           </a>
         </div>
-        <div className="w-full lg:w-72 aspect-video bg-stone-900 rounded-xl border border-stone-700 flex items-center justify-center relative overflow-hidden shadow-inner">
-          <div className="absolute inset-0 bg-gradient-to-tr from-green-500/5 to-transparent group-hover:bg-green-500/10 transition-colors"></div>
-          <Code2
-            size={40}
-            className="text-stone-800 group-hover:text-green-500/20 transition-colors"
-          />
+
+        {/* Área da Imagem com estilos dinâmicos */}
+        <div
+          className={`w-full lg:w-72 aspect-video ${imageBg} rounded-xl border border-stone-700 flex items-center justify-center relative overflow-hidden shadow-inner`}
+        >
+          {image ? (
+            <img
+              src={image}
+              alt={title}
+              className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${imageContain ? "object-contain p-4" : "object-cover"}`}
+            />
+          ) : (
+            <Code2
+              size={40}
+              className="text-stone-800 group-hover:text-green-500/20 transition-colors"
+            />
+          )}
         </div>
       </div>
     </div>

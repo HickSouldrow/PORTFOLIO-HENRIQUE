@@ -32,7 +32,7 @@ const Inicial = () => {
           </div>
 
           <div className="flex-1 text-center md:text-left">
-            <span className="text-green-400 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">
+            <span className="text-green-400 font-bold tracking-[0.7em] uppercase text-xs mb-4 block">
               Fullstack Developer
             </span>
             <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none mb-6">
@@ -41,8 +41,8 @@ const Inicial = () => {
             <p className="max-w-xl text-stone-400 text-lg md:text-xl leading-relaxed mb-8">
               Transformando lógica em interfaces intuitivas. Técnico pela ETEC,
               especializado em{" "}
-              <span className="text-white font-medium">React</span>, {" "}
-              <span className="text-white font-medium">MySQL</span> e {" "}
+              <span className="text-white font-medium">React</span>,{" "}
+              <span className="text-white font-medium">MySQL</span> e{" "}
               <span className="text-white font-medium">Ecossistema .NET</span>.
             </p>
 
@@ -82,13 +82,19 @@ const Inicial = () => {
               description="Plataforma promocional para monitoramento inteligente. Foco em UX/UI minimalista, performance com Vite e total responsividade."
               tags={["React", "Node.js", "Tailwind CSS", "SPA"]}
               link="https://guardsense-web.vercel.app"
+              image="/src/assets/Guardsense.svg"
+              imageBg="bg-white"
             />
+
             <ProjectCard
               title="GlitchScreen"
               description="Loja virtual de jogos Indie desenvolvida durante o HackTeen. Sistema de roteamento complexo e consumo de API por JSON."
               tags={["React Router", "Axios", "Vite", "Node.js"]}
-              link="https://github.com/HickSouldrow/Glitchscreen" 
+              link="https://github.com/HickSouldrow/Glitchscreen"
+              image="/src/assets/GlitchScreen.jpg"
               delay="200ms"
+              imageBg="bg-white"
+              imageContain={true}
             />
           </div>
         </section>
@@ -102,7 +108,14 @@ const Inicial = () => {
             <div className="grid gap-4">
               <TechCard
                 title="Frontend"
-                items={["React", "Javascript", "Tailwind", "Kotlin (Compose)", "TailWindCss", "C++"]}
+                items={[
+                  "React",
+                  "Javascript",
+                  "Tailwind",
+                  "Kotlin (Compose)",
+                  "TailWindCss",
+                  "C++",
+                ]}
               />
               <TechCard
                 title="Backend"
@@ -110,7 +123,16 @@ const Inicial = () => {
               />
               <TechCard
                 title="Tools"
-                items={["Git/GitHub", "Figma", "Docker Basics", "SQL", "Astah", "Visual Studio Code", "Intellij", "Android Studio"]}
+                items={[
+                  "Git/GitHub",
+                  "Figma",
+                  "Docker Basics",
+                  "SQL",
+                  "Astah",
+                  "Visual Studio Code",
+                  "Intellij",
+                  "Android Studio",
+                ]}
               />
             </div>
           </div>
@@ -130,7 +152,7 @@ const Inicial = () => {
                   Articulação Médio - Superior
                 </p>
               </div>
-                <div className="relative pl-6 border-l-2 border-stone-800">
+              <div className="relative pl-6 border-l-2 border-stone-800">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-stone-700"></div>
                 <h4 className="text-white font-bold">ETEC Zona Leste</h4>
                 <p className="text-green-400 text-sm font-mono uppercase">
@@ -150,6 +172,18 @@ const Inicial = () => {
                   Foco em .NET Core, APIs e C#
                 </p>
               </div>
+              <div className="relative pl-6 border-l-2 border-stone-800">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-stone-700"></div>
+                <h4 className="text-white font-bold">
+                  Bootcamp Santander 2026 - DIO{" "}
+                </h4>
+                <p className="text-green-400 text-sm font-mono uppercase">
+                  AI React Front-end{" "}
+                </p>
+                <p className="text-stone-500 text-sm mt-2">
+                  Foco em React, Typescript, AI APIs, TailwindCSS e CSS
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -163,7 +197,7 @@ const Inicial = () => {
               </p>
               <a
                 href="mailto:henriquedasilvamacedo6@gmail.com"
-                className="text-2xl md:text-4xl font-bold text-white hover:text-green-400 transition-colors break-all"
+                className="text-2xl md:text-2xl font-bold text-white hover:text-green-400 transition-colors break-all"
               >
                 henriquedasilva
                 <br className="md:hidden" />
